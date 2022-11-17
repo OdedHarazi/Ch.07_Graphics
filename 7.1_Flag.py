@@ -7,12 +7,10 @@ x= D+(A/10)
 while x >= D-5*(A/20):
     for z_offset in range(round(H/2),D,round(H*2)):arcade.draw_text("*",z_offset,x,(255,255,255),H*1.5)
     x-=(A/20)
-    for z_offset in range(round(H),D,round(H*2)):arcade.draw_text("*",z_offset-(A/10),x,(255,255,255),H*1.5)
+    for z_offset in range(round(H*3),D,round(H*2)):arcade.draw_text("*",z_offset-(A/10),x,(255,255,255),H*1.5,)
     x-=(A/20)
     for z_offset in range(round(H/2),D,round(H*2)):arcade.draw_text("*",z_offset,x,(255,255,255),H*1.5)
 arcade.finish_render() , arcade.run()
-
-
 '''
 FLAG PROJECT
 ---------------
@@ -69,3 +67,10 @@ CHALLENGE: Can you make the entire flag parametrically? This means if I change t
 
 
 
+# while x >= D-5*(A/20):
+#     for z_offset in range(round(H/2),D,round(H*2)):arcade.draw_text("*",z_offset,x,(255,255,255),H*1.5)
+#     x-=(A/20)
+#     for z_offset in range(round(H),D,round(H*2)):arcade.draw_text("*",z_offset-(A/10),x,(255,255,255),H*1.5,)
+#     x-=(A/20)
+#     for z_offset in range(round(H/2),D,round(H*2)):arcade.draw_text("*",z_offset,x,(255,255,255),H*1.5)
+# arcade.finish_render() , arcade.run()
