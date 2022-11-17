@@ -1,4 +1,4 @@
-A=360; D= round(.76*A); B,C,E,F,G,H,K,L,x=(1.9*A),(7/13)*A,(0.054*A),(0.054*A),(0.063*A),(0.063*A),(0.0616*A),round((1/13)*A),D+(A/10)
+A=int(input("How big would you like the flag to be? From 1 - 1000:")); D= round(.76*A); B,C,E,F,G,H,K,L,x=(1.9*A),(7/13)*A,(0.054*A),(0.054*A),(0.063*A),(0.063*A),(0.0616*A),round((1/13)*A),D+(A/10)
 import arcade ; arcade.open_window(B,A,"STARS AND STRIPES") ,arcade.set_background_color(arcade.color.WHITE), arcade.start_render()
 for y_offset in range (10,A,L*2): arcade.draw_line(0, y_offset, 2*A, y_offset, (180,10,45), L)
 arcade.draw_rectangle_filled(D/2,A-(C/2),D,C,(0,40,98))
